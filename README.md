@@ -28,6 +28,17 @@ Text2Path.convert( 'Hello, world!', font, font_size: 20 ).to_paths
 
 ~~~
 
+## installation
+
+    gem install text2path
+
+or
+
+    gem 'text2path'
+
+in your Gemfile
+
+
 ## helpful infomation
 [generating svg font file](http://xmlgraphics.apache.org/batik/tools/font-converter.html)
 
