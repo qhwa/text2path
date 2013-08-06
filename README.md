@@ -6,7 +6,7 @@ This library convert text into svg paths. For example:
 require 'text2path'
 
 # load font from pre-built svg font file
-# You can make svg font from .ttf or other format with Batik tools
+# You can make svg font from .ttf or other formats with Batik tools
 font = Text2Path::SvgFont.load 'assets/fonts/arial.svg'
 
 # Code below converts text to svg output that can be displayed in browsers:
@@ -31,3 +31,10 @@ Text2Path.convert( 'Hello, world!', font, font_size: 20 ).to_paths
 ## helpful infomation
 [generating svg font file](http://xmlgraphics.apache.org/batik/tools/font-converter.html)
 
+## TODO
+This project is at its very beginning, features missing:
+
+1. support right-to-left text directions
+2. support vertical orientation
+3. support more options like font-weight, font-style, kerning.. etc.
+4. helper to create svg fonts
