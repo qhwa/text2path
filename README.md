@@ -42,6 +42,10 @@ in your Gemfile
 ## helpful infomation
 [generating svg font file](http://xmlgraphics.apache.org/batik/tools/font-converter.html)
 
+## License
+copy right(s) qhwa 2013
+Licensed under the MIT license.
+
 ## TODO
 This project is at its very beginning, features missing:
 
