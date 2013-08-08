@@ -40,7 +40,13 @@ in your Gemfile
 
 
 ## helpful infomation
-[generating svg font file](http://xmlgraphics.apache.org/batik/tools/font-converter.html)
+### generating svg font file
+You can do it with [batik ttf2svg tool](http://xmlgraphics.apache.org/batik/tools/font-converter.html)
+
+in short:
+~~~sh
+java -jar batik-ttf2svg.jar -autorange "some-font.ttf" -o "some-font.svg"
+~~~
 
 ## License
 copy right(s) qhwa 2013
