@@ -1,8 +1,6 @@
 module Text2Path
 
-  Glyph = Struct.new :path, :horiz_adv_x, :horiz_adv_y
-
-  class Glyph
+  class Glyph < Struct.new :path, :horiz_adv_x, :horiz_adv_y
     
     def empty?
       !path || path.empty?
