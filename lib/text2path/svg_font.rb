@@ -76,6 +76,8 @@ module Text2Path
                   # e.g.
                   # &amp;  &quot; ..
                   decoder.decode( name )[0].ord
+                when nil
+                  # just ignore it
                 else
                   raise "unknown name: #{name}"
                 end
