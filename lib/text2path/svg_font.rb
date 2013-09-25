@@ -38,9 +38,7 @@ module Text2Path
 
     # "missing_glyph" is the fallback glyph
     # when not letter not in the charmap
-    def missing_glyph
-      
-    end
+    attr_reader :missing_glyph
 
     private
       
