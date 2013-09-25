@@ -33,7 +33,13 @@ module Text2Path
 
     def glyph( letter )
       key = letter.respond_to?(:ord) ? letter.ord : letter.to_i
-      glyphs[key] #|| missing_glyph
+      glyphs[key] || missing_glyph
+    end
+
+    # "missing_glyph" is the fallback glyph
+    # when not letter not in the charmap
+    def missing_glyph
+      
     end
 
     private
@@ -82,13 +88,17 @@ module Text2Path
                   raise "unknown name: #{name}"
                 end
 
-          adv_x     = glyph.attr('horiz-adv-x') || @horiz_adv_x
-          map[key]  = Glyph.new( glyph.attr('d'), adv_x.to_f )
+          map[key]  = parse_glyph( glyph )
           map
         end
         
+        @missing_glyph = parse_glyph( @xml.css('missing-glyph').first )
       end
 
+      def parse_glyph( node )
+        adv_x = node.attr('horiz-adv-x') || @horiz_adv_x
+        Glyph.new( node.attr('d'), adv_x.to_f )
+      end
   end
 
 end
