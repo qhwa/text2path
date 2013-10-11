@@ -2,14 +2,14 @@
 
 Gem::Specification.new do |s|
   s.name = "text2path"
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["qhwa"]
-  s.date = "2013-09-13"
+  s.date = "2013-10-11"
   s.email = "qhwa@163.com"
   s.extra_rdoc_files = ["README.md"]
-  s.files = ["README.md", "Gemfile.lock", "Gemfile", "lib/text2path.rb", "lib/text2path", "lib/text2path/glyph.rb", "lib/text2path/version.rb", "lib/text2path/svg_path.rb", "lib/text2path/converter.rb", "lib/text2path/svg_font.rb"]
+  s.files = ["README.md", "Gemfile.lock", "Gemfile", "lib/text2path.rb", "lib/text2path/glyph.rb", "lib/text2path/version.rb", "lib/text2path/svg_path.rb", "lib/text2path/converter.rb", "lib/text2path/svg_font.rb"]
   s.homepage = "https://github.com/qhwa/text2path"
   s.licenses = ["MIT"]
   s.rdoc_options = ["--main", "README.md"]
