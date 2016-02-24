@@ -1,5 +1,4 @@
 GEM
-  remote: http://ruby.taobao.org/
   specs:
     htmlentities (4.3.1)
     mini_portile (0.5.1)
