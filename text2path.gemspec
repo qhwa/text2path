@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = "2.0.3"
   s.summary = "convert text into svg paths"
 
+  s.add_dependency(%q<savage-transform>, ["~> 1.3.0"])
   if s.respond_to? :specification_version then
     s.specification_version = 4
 
